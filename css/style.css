@@ -9,7 +9,6 @@
     margin-top: 6rem;
   }
 
-/*  
   header{
     position: fixed;
     top: 0;
@@ -20,7 +19,7 @@
     background-color: white;
     box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
     z-index: 9999;
-  }*/
+  }
 
   header h1{
     position: absolute;
@@ -102,7 +101,15 @@
     color: #64fe2e;
   }
 
-/*スマホ*/
+  ul.slider li{
+    /*指定したい幅と高さ*/
+    /*width: 200;*/
+    min-height: 50vh;
+    max-height: 70vh;
+    position: relative;
+  }
+
+/*スマホ用*/
 @media all and (max-width: 600px) {
   .main-menu { 
     position: fixed;
@@ -114,46 +121,15 @@
     left: 10vw;
     width: 80vw;
   }
-
-  header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 600px;
-    height: 6rem;
-    background-color: white;
-    box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
-    z-index: 9999;
+    
+  .parallax-window {
+    height: 100vh;
   }
 
   ul.slider li{
     /*指定したい幅と高さ*/
     /*width: 200;*/
     min-height: 20vh;
-    position: relative;
-  }
-}
-
-/*PCなど*/
-@media all and (min-width: 600px) {
-  header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 600px;
-    height: 6rem;
-    background-color: white;
-    box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
-    z-index: 9999;
-  }
-
-  ul.slider li{
-    /*指定したい幅と高さ*/
-    /*width: 200;*/
-    min-height: 50vh;
-    max-height: 70vh;
     position: relative;
   }
 }
