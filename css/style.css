@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body{
+    margin-top: 6rem;
+  }
+
+/*  
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
+    z-index: 9999;
+  }*/
+
+  header h1{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1.5rem;
+    color: #2eccfa;
+  }
+
+  nav {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li{
+    margin-left: 1.5rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+  }
+
+  nav a{
+    color: #2eccfa;
+  }
+
+  /*wrapper {
+  }*/
+
+  section {
+    padding-top: 3rem;
+    padding-right: 12%;
+    padding-left: 12%;
+    min-height: 18rem;
+  }
+
+  section h1{
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+    color: #8000ff;
+  }
+
+  section p{
+    font-family: "Hannari"; 
+    color: #6e6e6e;
+
+  }
+
+  footer{
+    padding: 3rem;
+    background-color: white;
+    color: #2eccfa;
+    text-align: center;
+  }
+
+  /* parallax window */
+  .parallax-window {
+    height: 400vh;
+    padding-top: 3rem;
+    padding-right: 12%;
+    padding-left: 12%;
+    min-height: 18rem;
+    background: transparent;
+  }
+
+  .parallax-window h1{
+    color: #f7fe2e;
+  }
+
+  .parallax-window p{
+    color: #64fe2e;
+  }
+
+/*スマホ*/
+@media all and (max-width: 600px) {
+  .main-menu { 
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 0 0;
+    top: 4.3rem;
+    left: 10vw;
+    width: 80vw;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
+    z-index: 9999;
+  }
+
+  ul.slider li{
+    /*指定したい幅と高さ*/
+    /*width: 200;*/
+    min-height: 20vh;
+    position: relative;
+  }
+}
+
+/*PCなど*/
+@media all and (min-width: 600px) {
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0 3px 0.5rem #0101df(0,0,0,.4);
+    z-index: 9999;
+  }
+
+  ul.slider li{
+    /*指定したい幅と高さ*/
+    /*width: 200;*/
+    min-height: 50vh;
+    max-height: 70vh;
+    position: relative;
+  }
+}
+
+  ul.slider li img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  ul.slider li video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .bx-wrapper .bx-controls-direction a {
+    /*position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;*/
+    z-index: 1;
+  }
